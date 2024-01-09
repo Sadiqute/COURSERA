@@ -1,0 +1,84 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    text-align: center;
+    margin: 50px;
+    padding: 20px;
+}
+
+section{
+    display:flex;
+    justify-content: center;
+    /* flex-flow: row wrap; */
+    height: auto;
+}
+
+div{
+    background: grey;
+    border: 3px solid black;
+    width: 300px;
+    margin: 25px;
+    padding: 0 5px 5px 5px;
+}
+
+h2{
+    width: 100px;
+    margin-left: 8em;
+}
+
+.Chicken{
+    background: Pink;
+    text-transform: capitalize;
+    border: 2px solid black;
+    text-align: right;
+    padding-right: 19px;
+}
+
+.Beef{
+    background: Red;
+    text-transform: capitalize;
+    border: 2px solid black;
+    text-align: right;
+    padding-right: 19px;
+}
+
+.Sushi{
+    background: wheat;
+    text-transform: capitalize;
+    border: 2px solid black;
+    text-align: right;
+    padding-right: 19px;
+}
+
+
+@media screen and (max-width: 768px) {   
+ section {
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    flex-flow: column nowrap;
+    flex-direction: column;
+ }   
+}
+@media screen and (min-width: 769px) and (max-width: 991px) {
+ section {
+    display: flex;
+    background: blue;
+    justify-content:space-evenly;
+    align-items: center;
+    flex-flow: row wrap;
+ }   
+}
+
+@media screen and (min-width: 992px) {   
+ section {
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    flex-flow: row nowrap;
+ }   
+}
